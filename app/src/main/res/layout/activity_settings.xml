@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="16dp">
+
+  <!-- Heading TextView -->
+  <TextView
+    android:id="@+id/textViewHeading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Enter your InfluxDB credentials below"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="16dp"
+    android:layout_alignParentTop="true"/>
+
+  <!-- URL EditText -->
+  <EditText
+    android:id="@+id/editTextInfluxUrl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="InfluxDB URL"
+    android:inputType="textUri"
+    android:layout_below="@id/textViewHeading"
+    android:layout_marginTop="16dp"/>
+
+  <!-- API Token EditText -->
+  <EditText
+    android:id="@+id/editTextApiToken"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="API Token"
+    android:inputType="textPassword"
+    android:layout_below="@id/editTextInfluxUrl"
+    android:layout_marginTop="8dp"/>
+
+  <!-- Organization EditText -->
+  <EditText
+    android:id="@+id/editTextInfluxOrg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Organization"
+    android:layout_below="@id/editTextApiToken"
+    android:layout_marginTop="8dp"/>
+
+  <!-- Bucket EditText -->
+  <EditText
+    android:id="@+id/editTextInfluxBucket"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Bucket"
+    android:layout_below="@id/editTextInfluxOrg"
+    android:layout_marginTop="8dp"/>
+
+  <!-- Horizontal LinearLayout to hold the buttons -->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/editTextInfluxBucket"
+    android:layout_marginTop="16dp">
+
+    <!-- Save Button -->
+    <Button
+      android:id="@+id/buttonSaveSettings"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Save"/>
+
+    <!-- Reset Button -->
+    <Button
+      android:id="@+id/buttonResetSettings"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Reset"
+      android:layout_marginStart="8dp"/>
+  </LinearLayout>
+
+</RelativeLayout>

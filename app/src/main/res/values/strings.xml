@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">Sensor Logger</string>
+  <string name="view_data">View Data</string>
+</resources>
