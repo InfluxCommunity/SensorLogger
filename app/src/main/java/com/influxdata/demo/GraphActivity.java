@@ -147,15 +147,26 @@ public class GraphActivity extends AppCompatActivity {
 
   private void updateChart(List<Entry> accelEntries, List<Entry> gyroEntries) {
     LineDataSet accelDataSet = new LineDataSet(accelEntries, "Accelerometer X");
-    accelDataSet.setColor(Color.BLUE);
-    accelDataSet.setDrawCircles(false);
+    accelDataSet.setColor(Color.CYAN);
+    accelDataSet.setDrawCircles(true);
+    accelDataSet.setCircleColor(Color.CYAN);
+    accelDataSet.setCircleRadius(2f);
+    accelDataSet.setDrawValues(false);
+    accelDataSet.setLineWidth(2f);
+    accelDataSet.setMode(LineDataSet.Mode.CUBIC_BEZIER);
 
     LineDataSet gyroDataSet = new LineDataSet(gyroEntries, "Gyroscope X");
-    gyroDataSet.setColor(Color.RED);
-    gyroDataSet.setDrawCircles(false);
+    gyroDataSet.setColor(Color.MAGENTA);
+    gyroDataSet.setDrawCircles(true);
+    gyroDataSet.setCircleColor(Color.MAGENTA);
+    gyroDataSet.setCircleRadius(2f);
+    gyroDataSet.setDrawValues(false);
+    gyroDataSet.setLineWidth(2f);
+    gyroDataSet.setMode(LineDataSet.Mode.CUBIC_BEZIER);
 
     LineData lineData = new LineData(accelDataSet, gyroDataSet);
     chart.setData(lineData);
+    chart.animateX(1000);
     chart.invalidate();
   }
 
