@@ -1,4 +1,4 @@
-## Android Demo App using InfluxDB for storing and quering sensor data
+## Android (Java) Demo App using InfluxDB for storing and quering sensor data
 
 This Android Java app is used to store sensor data from accelerometer and gyroscope of the smartphone in X, Y, Z axis at regular time intervals into an InfluxDB Serverless database bucket.
 
