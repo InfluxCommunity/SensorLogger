@@ -5,6 +5,7 @@ This Android Java app is used to store sensor data from accelerometer and gyrosc
 1. [InfluxDB Java SDK](https://github.com/influxdata/influxdb-java)
 2. [MPAndroid Charts library for Data Visualization](https://github.com/PhilJay/MPAndroidChart)
 
+<img src="https://github.com/InfluxCommunity/SensorLogger/blob/main/app/src/main/res/drawable/screenshot_main_activity.png" width="300">
 
 ### Build & Run
 
@@ -15,3 +16,4 @@ This Android Java app is used to store sensor data from accelerometer and gyrosc
 6. Hit "Save" and "Start Logging" to log the data
 7. Open 'View Data' to see the graph visualization of the past few minutes of the data that was stored and quried from your InfluxDB.
 8. Optionally navigate to your InfluxDB [dashboard](https://cloud2.influxdata.com/login) and query to see the smartphone sensor data that was just stored.
+
