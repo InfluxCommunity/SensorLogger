@@ -6,6 +6,7 @@ This Android Java app is used to store sensor data from accelerometer and gyrosc
 2. [MPAndroid Charts library for Data Visualization](https://github.com/PhilJay/MPAndroidChart)
 
 <img src="https://github.com/InfluxCommunity/SensorLogger/blob/main/app/src/main/res/drawable/screenshot_main_activity.png" width="300">
+<img src="https://github.com/InfluxCommunity/SensorLogger/blob/main/app/src/main/res/drawable/screenshot_graph_activity.png" width="300">
 
 ### Build & Run
 
